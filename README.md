@@ -1,6 +1,8 @@
 # Pandoc Docker Image
 
-A docker image for running the latest version of [Pandoc](https://github.com/jgm/pandoc) built from source. The image includes:
+A docker image for running the latest version of 
+[Pandoc](https://github.com/jgm/pandoc) (as seen by `cabal update`) 
+built from source. The image includes:
 
   * Ubuntu Trusty (stackbrew/ubuntu:14.04)
   * Latex 2013.20140215-1
@@ -38,3 +40,12 @@ docker run \
     --metadata=acm-sig-alternate:'yes' \
     --output=/root/out/main.pdf /root/main.pdc
 ```
+
+## Version Info
+
+### 1.13.2
+
+  * Ubuntu Trusty (stackbrew/ubuntu:14.04)
+  * Latex 2013.20140215-1
+  * Pandoc (1.13.2)
+  * Pandoc-citeproc (0.6)
