@@ -4,10 +4,10 @@ A docker image for running the latest version of
 [Pandoc](https://github.com/jgm/pandoc) (as seen by `cabal update`) 
 built from source. The image includes:
 
-  * Ubuntu Trusty (stackbrew/ubuntu:14.04)
-  * Latex 2013.20140215-1
-  * Pandoc (1.13.2)
-  * Pandoc-citeproc (0.6)
+  * Ubuntu
+  * Latex
+  * Pandoc
+  * Pandoc-citeproc
 
 ## Usage
 
