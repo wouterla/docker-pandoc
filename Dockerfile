@@ -13,6 +13,15 @@ RUN cabal update && \
     cabal install pandoc-citeproc
 ENV PATH /root/.cabal/bin/:$PATH
 
+# install python
+RUN apt-get install -qy python
+
+# install filters
+RUN cd /tmp/ && \
+    git clone https://github.com/jgm/pandocfilters.git && \
+    cd pandocfilters && \
+    python setup.py install
+
 ENTRYPOINT ["pandoc"]
 CMD ["--help"]
 
