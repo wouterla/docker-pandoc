@@ -31,7 +31,7 @@ docker run \
   -v `pwd`/bibfile/zotero.bib:/root/citations.bib \
   -v `pwd`/main.pdc:/root/main.pdc \
   -v `pwd`/out:/root/out \
-  ivotron/pandoc:1.13.2 \
+  ivotron/pandoc:latest \
     --standalone \
     --latex-engine=xelatex \
     --self-contained \
@@ -49,8 +49,17 @@ repository.
 
 ## Version Info
 
+### 1.14.0.1
+
+  * Debian Jessie (debian:jessie)
+  * TexLive 20141024-2
+  * pandoc 1.14.0.1
+  * pandoc-citeproc 0.7.1.1
+  * pandoc-crossref 0.1.2.0
+
 ### 1.13.2.1
 
+  * Debian Jessie (debian:jessie)
   * TexLive 20141024-2
   * pandoc 1.13.2.1
   * pandoc-citeproc 0.7.1

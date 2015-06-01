@@ -9,7 +9,7 @@ RUN apt-get -yq update && apt-get install -qy \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 # install pandoc
-ENV PANDOCVERSION 1.13.2.1
+ENV PANDOCVERSION 1.14.0.1
 RUN cabal update && \
     cabal install cabal-install && \
     ~/.cabal/bin/cabal update && \
